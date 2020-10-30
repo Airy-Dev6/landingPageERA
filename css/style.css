@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  background-color: #1c2431;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .container {
+  margin-top: 20px;
+  width: 90%;
+}
+
+header .container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container nav img.logo {
+  width: 100px;
+}
+
+header .container nav ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0px 0px;
+}
+
+header .container nav ul li {
+  list-style: none;
+}
+
+header .container nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header .container .header-info {
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+}
+
+header .container .header-info img {
+  width: 100%;
+}
+
+header .container .header-info h1 {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+header .container .header-info p {
+  max-width: 400px;
+  margin: 30px auto;
+}
+
+header .container .header-info button {
+  border: none;
+  font-size: 15px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background-image: linear-gradient(to right, #65e2d9, #339ecc);
+  color: white;
+  padding: 10px 60px;
+  border-radius: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  header .container nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .container nav img.logo {
+    width: 200px;
+  }
+  header .container .header-info img {
+    max-width: 60%;
+  }
+  header .container .header-info h1 {
+    max-width: 60%;
+    font-size: 60px;
+  }
+  header .container .header-info p {
+    max-width: 50%;
+    font-size: 30px;
+  }
+  header .container .header-info button {
+    font-size: 30px;
+    padding: 10px 100px;
+    margin-bottom: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
