@@ -1,3 +1,110 @@
+
+$DarkBlue: hsl(217, 28%, 15%);
+$CyanButton: hsl(176, 68%, 64%);
+$Blue: hsl(198, 60%, 50%);
+
+* {
+    margin: 0;
+    background-color: $DarkBlue;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: center;
+    .container {
+        margin-top: 20px;
+        width: 90%;
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img.logo {
+                width: 100px;
+            }
+    
+            ul {
+                padding-inline-start: 0px;
+                width: 50%;
+                display: flex;
+                justify-content: space-around;
+                padding: 0px 0px;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .header-info {
+            margin-top: 40px;
+            text-align: center;
+            color: white;
+            img {
+                width: 100%;
+            }
+
+            h1 {
+                max-width: 400px;
+                margin: 0 auto;
+                margin-top: 60px;
+            }
+            p {
+                max-width: 400px;
+                margin: 30px auto;
+            }
+            button {
+                border: none;
+                font-size: 15px;
+                background-image: linear-gradient(to right, $CyanButton, $Blue);
+                color: white;
+                padding: 10px 60px;
+                border-radius: 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        .container {
+            nav {
+                justify-content: space-between;
+                img.logo{
+                    width: 200px;
+                }
+            }
+            .header-info {
+                img {
+                    max-width: 60%;
+                }
+                h1 {
+                    max-width: 60%;
+                    font-size: 60px;
+                }
+                p {
+                    max-width: 50%;
+                    font-size: 30px;
+                }
+
+                button {
+                    font-size: 30px;
+                    padding: 10px 100px;
+                    margin-bottom: 50px;
+                }
+
+            }
+        }
+    }
+=======
 //colors
 $dark-blue-backgrond: hsl(218, 28%, 13%);
 $dark-blue-testimonials: hsl(219, 30%, 18%);
@@ -292,5 +399,6 @@ body{
             }
         }
     }
+
 
 }
